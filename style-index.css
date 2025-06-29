@@ -29,34 +29,31 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.nav span {
-    color: var(--primary-color);
+.navbar {
+  background-color: #fff;
+  z-index: 1000;
 }
 
-/* Menu List */
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    justify-content: flex-end; /* Memastikan menu ada di kanan */
-    width: 100%;
+.navbar-brand img {
+  max-height: 70px;
 }
 
-nav ul li {
-    margin: 0 15px;
+.navbar-nav .nav-link {
+  color: #333;
+  transition: color 0.3s;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s;
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color);
 }
 
-nav ul li a:hover {
-    color: var(--primary-color);
+@media (max-width: 767.98px) {
+  .navbar-nav {
+    background-color: #fff;
+    padding: 10px 0;
+  }
 }
+
 
 /* Tombol Menu Toggle (Sembunyikan di Desktop) */
 .menu-toggle {
@@ -134,11 +131,6 @@ nav ul li a:hover {
 
 /* MODE MOBILE */
 @media (max-width: 768px) {
-    header {
-        padding: 15px 20px;
-        width: 100%;
-        height: 81px;
-    }
     .info{
         margin-top: 0;
         height: 100vh;
@@ -146,29 +138,6 @@ nav ul li a:hover {
     .content{
         margin-top: 100px;
     }
-    nav ul {
-        display: none; /* Sembunyikan menu */
-        flex-direction: row;
-        justify-content: space-around;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background: var(--secondary-color);
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        padding: px 0;
-    }
-
-    nav ul.active {
-        display: flex;
-        height: 50px;
-    }
-
-    nav ul li {
-        margin: 15px 0;
-    }
-
     .menu-toggle {
         display: block; /* Munculkan toggle hanya di mobile */
         position: absolute;
