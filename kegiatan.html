@@ -4,7 +4,7 @@
     <meta charset="UTF-8" /> <!-- Character encoding for the document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsive design settings -->
     <title>Document</title> <!-- Title of the document -->
-    <link rel="stylesheet" href="style-contact.css" /> <!-- Link to external CSS for contact page -->
+    <link rel="stylesheet" href="/style/style-contact.css" /> <!-- Link to external CSS for contact page -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" /> <!-- Link to Google Fonts for Poppins -->
@@ -22,34 +22,25 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> <!-- Link to AOS (Animate On Scroll) CSS -->
   </head>
   <body style="background-color: #f4f8ff"> <!-- Body with a light blue background color -->
-    <header> <!-- Header section -->
-      <nav class="navbar"> <!-- Navigation bar -->
-        <div class="container-fluid"> <!-- Fluid container for responsive layout -->
-          <a class="navbar-brand" href="index.html"> <!-- Brand logo link -->
-            <img
-              src="https://web.polines.ac.id/wp-content/uploads/2021/12/PLBS-Polines.png"
-              alt="Logo"
-              width="70"
-              height="auto"
-              class="d-inline-block align-text-top" /> <!-- Logo image -->
-          </a>
-          <h5 class="fw-bolder">PLBS FM</h5> <!-- Station name -->
-        </div>
-      </nav>
-      <nav> <!-- Secondary navigation -->
-        <ul id="menu"> <!-- Unordered list for menu items -->
-          <li>
-            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a> <!-- Home link -->
-          </li>
-          <li>
-            <a href="#proker"><i class="fa-solid fa-briefcase"></i> Kegiatan</a> <!-- Activities link -->
-          </li>
-          <li>
-            <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a> <!-- Contact link -->
-          </li>
-        </ul>
-      </nav>
-      <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">☰</div> <!-- Menu toggle button -->
+        <header>
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm px-4 fixed-top">
+            <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="https://web.polines.ac.id/wp-content/uploads/2021/12/PLBS-Polines.png" alt="Logo" width="70" />
+                <h5 class="fw-bolder mb-0 ms-2">PLBS FM</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link fw-semibold" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold" href="kegiatan.html"><i class="fa-solid fa-briefcase"></i> Kegiatan</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold" href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
     </header>
     <section class="row text-center my-5 mx-5 g-5"> <!-- Section for activity cards -->
       <div class="col-sm-6 mb-3 mb-sm-0"> <!-- Column for first activity card -->
@@ -107,7 +98,7 @@
         </div>
       </div>
     </section>
-    <script src="nav.js"></script> <!-- Link to external JavaScript for navigation -->
+    <script src="/js/nav.js"></script> <!-- Link to external JavaScript for navigation -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
     crossorigin="anonymous"></script> <!-- Link to Bootstrap JavaScript -->
