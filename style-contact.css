@@ -1,9 +1,12 @@
+/* Reset dan Umum */
 *,
 html,
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family:'poppins',medium500;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Mencegah scroll horizontal */
 }
 
 :root {
@@ -25,43 +28,52 @@ header {
     justify-content: space-between;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Navbar */
 .navbar {
-  background-color: #fAfAfA;
-  z-index: 1000;
+    background-color: var(--secondary-color);
+    z-index: 1000;
+    padding: 1rem 2rem;
 }
 
 .navbar-brand img {
-  max-height: 70px;
+    max-height: 70px;
 }
 
 .navbar-nav .nav-link {
-  color: #1D242B;
-  transition: color 0.3s;
+    color: #1D242B;
+    transition: color 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 @media (max-width: 767.98px) {
-  .navbar-nav {
-    background-color: #fAfAfA;
-    padding: 10px 0;
-  }
+    .navbar-nav {
+        background-color: var(--secondary-color);
+        padding: 10px 0;
+    }
 }
 
-/* Tombol Menu Toggle (Sembunyikan di Desktop) */
+/* Tombol Menu Toggle (Mobile) */
 .menu-toggle {
-    display: none; /* Hanya muncul di mode mobile */
+    display: none;
     cursor: pointer;
     font-size: 24px;
 }
 
-
+/* Section */
 .section {
     background-color: var(--secondary-color);
+    padding: 2rem 0;
 }
 
+.section .container {
+    padding: 0 15px;
+}
+
+/* Tombol */
 .btn {
     display: inline-block;
     margin-top: 20px;
@@ -82,19 +94,23 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Gambar Responsif */
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-/* MODE MOBILE */
+/* RESPONSIF MOBILE */
 @media (max-width: 768px) {
     header {
         padding: 15px 20px;
-        width: 100%;
         height: 80px;
     }
 
     .menu-toggle {
-        display: block; /* Munculkan toggle hanya di mobile */
+        display: block;
         position: absolute;
-        right: 20px; /* Tetap mentok kanan */
-        top: 25px; /* Sejajar dengan header */
+        right: 20px;
+        top: 25px;
     }
 }
